@@ -10,10 +10,18 @@
     <script src="/node_modules/systemjs/dist/system.src.js"></script>
     <script src="/systemjs.config.js"></script>
     <script>
-        System.import('/app/main.js').catch(function (err) { console.error(err); });
+        System.import("/app/main.js").catch(function (err) { console.error(err); });
     </script>
 </head>
 <body>
     <my-app>Loading...</my-app>
+    <script>
+        let url = new URL(window.location.href);
+        let culture = url.searchParams.get("culture");
+        let script = document.createElement("script");
+        script.type = "application/javascript";
+        script.src = "/lang/" + (culture ? culture : "en-gb") + ".js";
+        document.body.appendChild(script);
+    </script>
 </body>
 </html>

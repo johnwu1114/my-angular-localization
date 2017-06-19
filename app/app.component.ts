@@ -5,6 +5,4 @@ import { Component, VERSION } from "@angular/core";
     templateUrl: "/app/app.component.html"
 })
 export class AppComponent {
-    name = "Angular";
-    version = VERSION.full;
 }
