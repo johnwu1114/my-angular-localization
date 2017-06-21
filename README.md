@@ -17,8 +17,12 @@ Blog：
 > 基本上 VS Code 就是純文字編輯工具，你要用 Sublime、Notepade++、Atom、TextEdit都可以。  
 2. Nodejs 6.9.x 以上版本 及 npm 3 以上版本。[官網下載頁面](https://nodejs.org/en/download/)  
 
-下載範例後記得在專案目錄安裝 npm packages
-
+下載範例後記得在專案目錄安裝 npm packages：
 ``` batch
 npm install
+```
+
+安裝完 npm packages 後，用以下指令啟動：
+``` batch
+npm run dev
 ```
